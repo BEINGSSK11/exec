@@ -7,9 +7,9 @@ const app = express();
 // Enable CORS middleware
 app.use(cors());
 
-app.get(('/hello', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('Hello World')
-}))
+})
 
 // Define route for opening file in Notepad++
 app.get('/openpath', (req, res) => {
